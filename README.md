@@ -1,5 +1,5 @@
 <h1>
-  <img align="center" src="assets/icon.png" width="48" height="48" alt="Ope logo"/>
+  <img src="assets/icon.png" width="48" height="48" alt="Ope logo"/>
   Ope Client
 </h1>
 
