@@ -1,4 +1,5 @@
-import { app, BrowserWindow } from "electron";
+import { app, BrowserWindow, globalShortcut } from "electron";
+
 
 app.whenReady().then(() => {
     const win = new BrowserWindow({
@@ -13,5 +14,9 @@ app.whenReady().then(() => {
     // Ignore the page's exit confirmation prompt.
     win.webContents.on("will-prevent-unload", (event) => {
         event.preventDefault();
+    });
+
+    globalShortcut.register("F12", () => {
+        win.webContents.toggleDevTools();
     });
 });
