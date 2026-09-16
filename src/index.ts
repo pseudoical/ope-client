@@ -1,6 +1,5 @@
 import { app, BrowserWindow, globalShortcut } from "electron";
 
-
 // navigator.userAgent: Chrome/152.0.7977.78 Electron/44.4.1
 // https://peter.sh/experiments/chromium-command-line-switches/
 app.commandLine.appendSwitch("use-vulkan");
