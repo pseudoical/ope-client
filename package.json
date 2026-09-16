@@ -1,0 +1,12 @@
+{
+  "name": "ope",
+  "version": "1.0.0",
+  "description": "A minimal, cross-platform Apes.io client",
+  "license": "Apache-2.0",
+  "author": "pseudoical",
+  "type": "module",
+  "main": "./src/index.ts",
+  "scripts": {
+    "start": "node ."
+  }
+}
