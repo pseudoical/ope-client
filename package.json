@@ -7,14 +7,42 @@
   "type": "module",
   "main": "./src/index.ts",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "app:dir": "npm run app:clean && electron-builder --dir",
+    "app:dist": "npm run app:clean && electron-builder build -wml",
+    "app:clean": "rm -rf ./dist"
   },
   "build": {
     "appId": "com.pseudoical.ope",
-    "productName": "Ope"
+    "productName": "Ope",
+    "win": {
+      "target": [
+        {
+          "target": "msi",
+          "arch": "x64"
+        }
+      ]
+    },
+    "mac": {
+      "target": [
+        {
+          "target": "zip",
+          "arch": "x64"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        {
+          "target": "appimage",
+          "arch": "x64"
+        }
+      ]
+    }
   },
   "devDependencies": {
     "electron": "44.4.1",
+    "electron-builder": "^26.15.3",
     "typescript": "^7.0.2"
   }
 }
