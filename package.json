@@ -7,6 +7,14 @@
   "type": "module",
   "main": "./src/index.ts",
   "scripts": {
-    "start": "node ."
+    "start": "electron ."
+  },
+  "build": {
+    "appId": "com.pseudoical.ope",
+    "productName": "Ope"
+  },
+  "devDependencies": {
+    "electron": "44.4.1",
+    "typescript": "^7.0.2"
   }
 }
